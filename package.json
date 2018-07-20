@@ -1,0 +1,25 @@
+{
+  "name": "friend-finder",
+  "version": "1.0.0",
+  "description": "Friend-finder",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anil093/Friend-finder.git"
+  },
+  "author": "anil",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anil093/Friend-finder/issues"
+  },
+  "homepage": "https://github.com/anil093/Friend-finder#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
