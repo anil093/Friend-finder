@@ -11,10 +11,10 @@ Getting Started
 
 
 <h1>Technologies used </h1>
-Node.js
-body-parager NPM Package - https://www.npmjs.com/package/inquirer
-express NPM Package - https://www.npmjs.com/package/express
-CORS NPM package - https://www.npmjs.com/package/cors
+<li>Node.js</li>
+<li>body-parager NPM Package - https://www.npmjs.com/package/inquirer</li>
+<li>express NPM Package - https://www.npmjs.com/package/express</li>
+<li>CORS NPM package - https://www.npmjs.com/package/cors</li>
 Prerequisites
-- Node.js - Download the latest version of Node https://nodejs.org/en/
-- Materialize - Add CDN link to HTML http://materializecss.com/getting-started.html
+<li>- Node.js - Download the latest version of Node https://nodejs.org/en/</li>
+<li>- Materialize - Add CDN link to HTML http://materializecss.com/getting-started.html</li>
