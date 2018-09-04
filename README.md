@@ -15,6 +15,6 @@ Getting Started
 <li>body-parager NPM Package - https://www.npmjs.com/package/inquirer</li>
 <li>express NPM Package - https://www.npmjs.com/package/express</li>
 <li>CORS NPM package - https://www.npmjs.com/package/cors</li>
-Prerequisites
+<h3>Prerequisites</h3>
 <li>- Node.js - Download the latest version of Node https://nodejs.org/en/</li>
 <li>- Materialize - Add CDN link to HTML http://materializecss.com/getting-started.html</li>
