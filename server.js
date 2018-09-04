@@ -1,22 +1,22 @@
-var express =  require('express');
+var express = require("express");
+var bodyParser = require("body-parser");
+
+// provides utilities for working with file and directory paths
+var path = require("path");
+
+// Tells node that we are creating an "express" server
 var app = express();
-var path = require('path');
-var htmlRoutes = require('./routing/htmlRoutes.js');
 
-var port = 3000;
-var connection;
+// Sets an initial port. We"ll use this later in our listener
+var PORT = process.env.PORT || 8080;
 
+// Sets up the Express app to handle data parsing
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-app.listen(port, () =>
-console.log(`connected on port: ${port}`));
+require("./routing/apiRoutes")(app);
+require("./routing/htmlRoutes")(app);
 
-app.get('/',(request, response) => {
-    response.sendFile(path.resolve('./public/home.html'));
-})
-app.get('/survey',(request, response) => {
-    response.sendFile(path.resolve('./public/survey.html'));
-}) 
-
-
-
-htmlRoutes(app);
+app.listen(PORT, function() {
+  console.log("App listening on PORT: " + PORT);
+});
