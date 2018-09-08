@@ -22,16 +22,7 @@ module.exports = function(app) {
 
       scoresArray.push(scoresDiff);
     }
-    // scoresArray = [ 4, 5, 6, 3, 10, 9];
 
-    //after all friends are compared, find best match
-    // for(var i=0; i<scoresArray.length; i++){
-    //initial best match is 0. Then go thru each index
-    //e.g. scoresArray[0]<=scoresArray[0] = bestMach=4
-    //     if(scoresArray[i] <= scoresArray[bestMatch]){
-    //       bestMatch = i;
-    //     }
-    //   }
     for (var i = 0; i < scoresArray.length; i++) {
       if (scoresArray[i] <= scoresArray[bestMatch]) {
         bestMatch = i;
